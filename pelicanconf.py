@@ -3,7 +3,7 @@ SITENAME = 'Khalti Engineering'
 SITEURL = ''
 THEME = 'attila-1.5'
 
-PATH = 'content'
+PATH = 'docs'
 
 TIMEZONE = 'Asia/Kathmandu'
 
