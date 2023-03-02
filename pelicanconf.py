@@ -1,5 +1,5 @@
 AUTHOR = 'Department of Technology (Khalti)'
-SITENAME = 'K W A T I'
+SITENAME = 'Bits in Skewers'
 SITESUBTITLE = 'engineering@khalti.com'
 SITEURL = ''
 THEME = 'attila-1.5'
