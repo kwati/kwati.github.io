@@ -3,6 +3,7 @@
 &lt;p&gt;Coincidentally, our national election day and this year's World Cup Football opening match were scheduled on the same day. Even the election was among …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Due to several factors, our application became unreachable on the FIFA World Cup 2022 opening day. World Cup Football is undoubtedly the planet's biggest sporting phenomenon. &lt;/p&gt;
 &lt;p&gt;Coincidentally, our national election day and this year's World Cup Football opening match were scheduled on the same day. Even the election was among the prominent news headlines due to the lineup of independent and new candidates.&lt;/p&gt;
 &lt;p&gt;Leading payment instruments in the country faced a prolonged downtime around the opening match schedules. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Connections spike distribution" src="assets/article_images/2023/0001.connections.png" title="incoming connections"&gt;&lt;/p&gt;
 &lt;h1&gt;Our Scope as a payment provider&lt;/h1&gt;
 &lt;p&gt;Due to the Territory Distribution restrictions of FIFA World Cup 2022, customers had to pay 500 Rs + VAT to the MSOs (Multiple Systems Operators) to watch the live matches. There were two major payment requirements, &lt;/p&gt;
 &lt;ol&gt;
@@ -42,6 +43,8 @@ We horizontally scaled our application nodes by adding more nodes to the cluster
 During this, as per our policy, services are in high demand, and services consumed by applications for marketing and promotional activities are all disabled.&lt;/p&gt;
 &lt;h3&gt;23:50 Hours&lt;/h3&gt;
 &lt;p&gt;We increased the number of application and worker nodes by 200 %&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Connections spike distribution" src="assets/article_images/2023/0001.scaling.png"&gt;
+Fig, scaling&lt;/p&gt;
 &lt;h2&gt;Preventions for the future&lt;/h2&gt;
 &lt;p&gt;Moving forward, we shall be implementing several measures to prevent similar incidents from occurring in the future:&lt;/p&gt;
 &lt;ol&gt;
