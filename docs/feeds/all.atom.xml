@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Bits in Skewers</title><link href="https://khalti.engineering/" rel="alternate"></link><link href="https://khalti.engineering/feeds/all.atom.xml" rel="self"></link><id>https://khalti.engineering/</id><updated>2023-03-02T15:00:00+05:45</updated><subtitle>engineering@khalti.com</subtitle><entry><title>Observation of WorldCup 2022 as a payment service provider</title><link href="https://khalti.engineering/worldcup-2022-psp-khalti.html" rel="alternate"></link><published>2023-03-02T15:00:00+05:45</published><updated>2023-03-02T15:00:00+05:45</updated><author><name>Dhruba Adhikari</name></author><id>tag:khalti.engineering,2023-03-02:/worldcup-2022-psp-khalti.html</id><summary type="html">&lt;p&gt;Due to several factors, our application became unreachable on the FIFA World Cup 2022 opening day. World Cup Football is undoubtedly the planet's biggest sporting phenomenon. &lt;/p&gt;
+&lt;p&gt;Coincidentally, our national election day and this year's World Cup Football opening match were scheduled on the same day. Even the election was among …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Due to several factors, our application became unreachable on the FIFA World Cup 2022 opening day. World Cup Football is undoubtedly the planet's biggest sporting phenomenon. &lt;/p&gt;
+&lt;p&gt;Coincidentally, our national election day and this year's World Cup Football opening match were scheduled on the same day. Even the election was among the prominent news headlines due to the lineup of independent and new candidates.&lt;/p&gt;
+&lt;p&gt;Leading payment instruments in the country faced a prolonged downtime around the opening match schedules. &lt;/p&gt;
+&lt;h1&gt;Our Scope as a payment provider&lt;/h1&gt;
+&lt;p&gt;Due to the Territory Distribution restrictions of FIFA World Cup 2022, customers had to pay 500 Rs + VAT to the MSOs (Multiple Systems Operators) to watch the live matches. There were two major payment requirements, &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Price for the TV subscription&lt;/li&gt;
+&lt;li&gt;Price for the world cup channel activation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Like other payment service providers, Khalti was also a payment partner integrated with television providers and ISPs. &lt;/p&gt;
+&lt;p&gt;Football being one of the biggest sporting crazes and World Cup being the most awaited event for football fans, it was sure that the payment requirement would bring some traffic spikes. However, the incoming traffic was much higher than anticipated.  &lt;/p&gt;
+&lt;h1&gt;The Impact&lt;/h1&gt;
+&lt;p&gt;During the incident, users reported that the application was either unresponsive or slow in responding to requests. Additionally, some users experienced frequent 500 errors when accessing certain pages or services. We also received reports from users who had successfully made payments for TV channel subscriptions but could not access the channels.&lt;/p&gt;
+&lt;h1&gt;Investigation&lt;/h1&gt;
+&lt;p&gt;Upon receiving reports of the incident, our team immediately began investigating the issue. We monitored our application logs and system metrics and found that our servers were experiencing high traffic and requests during the incident. We also observed that some of our servers ran at or near capacity.&lt;/p&gt;
+&lt;h1&gt;Root Cause Analysis&lt;/h1&gt;
+&lt;p&gt;Our investigation revealed that the incident's root cause was a sudden surge in traffic. We had configured our WAF (Web Application Firewall) to drop traffic above a certain DDoS threshold. However, this threshold seemed too low for the surge in traffic during the event, resulting in drops in many legitimate requests.&lt;/p&gt;
+&lt;p&gt;Second, although we had increased the capacity of our application processes and threads in anticipation of the increased traffic, we underestimated the number of concurrent requests generated during peak periods. This lower estimation resulted in our application servers becoming overloaded and unable to respond to new server requests.&lt;/p&gt;
+&lt;p&gt;Finally, the increased traffic also led to a high number of database connections, which exceeded the capacity of our database server. The increased number of active DB connections caused delays in processing requests and resulted in timeouts and errors.&lt;/p&gt;
+&lt;h1&gt;Resolution steps taken&lt;/h1&gt;
+&lt;p&gt;To address the above issues, we took the following steps:
+We increased the DDoS threshold on our WAF to a level that could handle the expected traffic during peak periods.
+We further scaled up the capacity of our application processes and threads to handle more concurrent requests.
+We also increased the connection capacity of our database server to manage handling a higher number of socket connections. We improved our database queries' efficiency to reduce the server's load.
+We horizontally scaled our application nodes by adding more nodes to the cluster. This action allowed us to distribute the load across multiple nodes and handle a higher number of concurrent requests.&lt;/p&gt;
+&lt;h2&gt;Major events during the downtime&lt;/h2&gt;
+&lt;h3&gt;17:15 Hours&lt;/h3&gt;
+&lt;p&gt;The system started reporting the first spike in traffic.&lt;/p&gt;
+&lt;h3&gt;17:43 Hours&lt;/h3&gt;
+&lt;p&gt;The system activated an automatic DDoS protection rule due to reaching the pre-configured TPS threshold, thus activating a captcha challenge for all requests after that as part of the configured mitigation. The threshold limit was subsequently increased by ten times by an on-duty engineer to address the spike in traffic.&lt;/p&gt;
+&lt;h3&gt;19:23 Hours&lt;/h3&gt;
+&lt;p&gt;Traffic spiked to surpass the new threshold again. We reconfigured the TPS threshold to sustain 20 times the organic traffic.&lt;/p&gt;
+&lt;h3&gt;19:40 Hours&lt;/h3&gt;
+&lt;p&gt;Application nodes started to hit their traffic limits. We then increased the application processes and threads also. &lt;/p&gt;
+&lt;p&gt;After raising the DDoS threshold and allowing more requests to pass through to the application nodes, the system monitor indicated more server-side errors and gateway timeouts. As a result, the team quickly started planning for horizontal scaling of the application nodes and began working on it. Additionally, we arranged to double the processes and thread capacities of the web server gateways.&lt;/p&gt;
+&lt;h3&gt;19:55 Hours&lt;/h3&gt;
+&lt;p&gt;After we increased the process and thread capacity of the web server gateways, the database then reached its connection limits. We reconfigured the limit with a five times more threshold.&lt;/p&gt;
+&lt;h3&gt;20:20 Hours&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;System Load Shedding plan&lt;/em&gt; activated. 
+During this, as per our policy, services are in high demand, and services consumed by applications for marketing and promotional activities are all disabled.&lt;/p&gt;
+&lt;h3&gt;23:50 Hours&lt;/h3&gt;
+&lt;p&gt;We increased the number of application and worker nodes by 200 %&lt;/p&gt;
+&lt;h2&gt;Preventions for the future&lt;/h2&gt;
+&lt;p&gt;Moving forward, we shall be implementing several measures to prevent similar incidents from occurring in the future:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We had initially planned to extend our infrastructure to a &lt;strong&gt;High-Availability Data Center&lt;/strong&gt;. Due to this incident, we decided to expedite the process and expect to go live with a Data Center pair by the end of August 2023.&lt;/li&gt;
+&lt;li&gt;We also decided to deploy more observability metrics for better preparedness for such traffic anticipations in the future.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On an ending note,
+We admit that it was a matter of utter inconvenience and dissatisfaction for the customers we intended to serve as a service provider. However, this became an important milestone for us and the industry. We have pulled our future scaling plans forward, activating both short-term and long-term remediations to prevent such an incident from happening. &lt;/p&gt;
+&lt;p&gt;Here we are, with a responsible disclosure and a promise towards better service delivery in the coming days. &lt;/p&gt;</content><category term="reflections"></category><category term="reflection"></category><category term="downtime"></category><category term="infrastructure"></category></entry></feed>
