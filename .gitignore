@@ -2,8 +2,10 @@
 env/
 *.zip
 output/
+docs/
 *.code-workspace
 themes/
 *.pyc
 __pycache__/
+docs/
 

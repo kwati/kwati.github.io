@@ -1,6 +1,6 @@
 ---
-title: Sorem is a page
-name: Google
+title: Reflections
+name: khalti
 date: 2018-04-29 00:45
 author: acpmasquerade
 category: sorem-page

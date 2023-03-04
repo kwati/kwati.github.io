@@ -4,7 +4,9 @@ SITESUBTITLE = 'engineering@khalti.com'
 SITEURL = ''
 THEME = 'attila-1.5'
 
-PATH = 'docs'
+PATH = 'content'
+OUTPUT_PATH = 'docs/'
+STATIC_PATHS = ['content/assets/']
 
 TIMEZONE = 'Asia/Kathmandu'
 
@@ -32,4 +34,5 @@ DEFAULT_PAGINATION = 5
 
 
 # Theme configurations 
-HOME_COVER = 'assets/images/blog_cover.png'
+HOME_COVER = 'assets/images/skewers.jpg'
+# HOME_COVER = 'assets/images/skewers.jpg'

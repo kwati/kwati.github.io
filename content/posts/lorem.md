@@ -1,12 +1,12 @@
 ---
-title: Lorem here
-name: Google
-date: 2018-04-29 00:45
-author: arul
-category: foo
-tags: footag
-slug: with-cover-images
-cover: /assets/images/article_cover.jpg
+title: Observation of WorldCup 2022 as a payment service provider 
+name: Khalti
+date: 2023-03-02 15:00
+author: Dhruba Adhikari, Aman Maharjan
+category: reflections
+tags: reflection, downtime, infrastructure
+slug: worldcup-2022-psp-khalti
+cover: /assets/images/skewers.jpg
 ---
 
 # What is Lorem Ipsum?
