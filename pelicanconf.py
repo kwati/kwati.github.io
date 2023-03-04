@@ -1,7 +1,8 @@
 AUTHOR = 'Department of Technology (Khalti)'
 SITENAME = 'Bits in Skewers'
-SITESUBTITLE = 'engineering@khalti.com'
+SITESUBTITLE = 'Engineering | Khalti.com'
 SITEURL = 'http://localhost:8000'
+SHOW_SITESUBTITLE_IN_HTML = True
 
 THEME = 'attila-1.5'
 # All theme settings (for attilia)
@@ -13,6 +14,7 @@ OUTPUT_PATH = 'docs/'
 STATIC_PATHS = ['assets/', 'extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}, 
 }
 
 TIMEZONE = 'Asia/Kathmandu'
