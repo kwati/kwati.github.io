@@ -2,7 +2,11 @@ AUTHOR = 'Department of Technology (Khalti)'
 SITENAME = 'Bits in Skewers'
 SITESUBTITLE = 'engineering@khalti.com'
 SITEURL = 'http://localhost:8000'
+
 THEME = 'attila-1.5'
+# All theme settings (for attilia)
+# Reference https://github.com/arulrajnet/attila-demo/blob/master/pelicanconf.py
+
 
 PATH = 'content'
 OUTPUT_PATH = 'docs/'
@@ -35,8 +39,27 @@ DEFAULT_PAGINATION = 5
 RELATIVE_URLS = False
 
 CSS_OVERRIDE = ['assets/css/kwati.css']
+# COLOR_SCHEME_CSS = 'tomorrow_night.css'
 
+
+GOOGLE_ANALYTICS = "G-0K4GR3CZ37"
 
 # Theme configurations 
 HOME_COVER = 'assets/images/skewers.jpg'
-# HOME_COVER = 'assets/images/skewers.jpg'
+
+AUTHORS_BIO = {
+  "dhruba-adhikari": {
+    # "name": "Zutrinken",
+    # "cover": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
+    # "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
+    # "website": "http://blog.arulraj.net",
+    # "location": "Chennai",
+    # "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+  }
+}
+
+SHOW_FULL_ARTICLE = False
+
+HEADER_COVERS_BY_CATEGORY = {'food': '/images/junkie-stuff.png'}
+HEADER_COVERS_BY_TAG = {'food': '/images/food.png', 'drinks':'/images/orange-juice.png'}
+SHOW_CREDITS = False

@@ -20,3 +20,7 @@ section.post-content h2{
 section.post-content h3{
     font-size: 2rem;
 }
+
+.googleplus{
+    display: none !important;
+}
