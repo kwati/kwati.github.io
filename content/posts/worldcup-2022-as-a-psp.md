@@ -17,6 +17,7 @@ Coincidentally, our national election day and this year's World Cup Football ope
 
 Leading payment instruments in the country faced a prolonged downtime around the opening match schedules. 
 
+![Connections spike distribution](assets/article_images/2023/0001.connections.png "incoming connections")
 
 # Our Scope as a payment provider
 Due to the Territory Distribution restrictions of FIFA World Cup 2022, customers had to pay 500 Rs + VAT to the MSOs (Multiple Systems Operators) to watch the live matches. There were two major payment requirements, 
@@ -53,7 +54,6 @@ We horizontally scaled our application nodes by adding more nodes to the cluster
 
 ## Major events during the downtime
 
-
 ### 17:15 Hours
 The system started reporting the first spike in traffic.
 
@@ -83,6 +83,9 @@ During this, as per our policy, services are in high demand, and services consum
 
 ### 23:50 Hours
 We increased the number of application and worker nodes by 200 %
+
+![Connections spike distribution](assets/article_images/2023/0001.scaling.png)
+Fig, scaling
 
 ## Preventions for the future
 Moving forward, we shall be implementing several measures to prevent similar incidents from occurring in the future:
