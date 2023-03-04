@@ -1,0 +1,5 @@
+{% if article %}
+{% if FACEBOOK_COMMENTS_ENABLED|default(True) %}
+<div class="fb-comments" data-href="{{ SITEURL }}/{{ article.url }}" data-width="100%" data-numposts="10"></div>
+{% endif %}
+{% endif %}

@@ -4,7 +4,7 @@ SITESUBTITLE = 'Engineering | Khalti.com'
 SITEURL = 'http://localhost:8000'
 SHOW_SITESUBTITLE_IN_HTML = True
 
-THEME = 'attila-1.5'
+THEME = 'attila-1.5-kk5-0.0.1'
 # All theme settings (for attilia)
 # Reference https://github.com/arulrajnet/attila-demo/blob/master/pelicanconf.py
 
@@ -69,3 +69,4 @@ HEADER_COVERS_BY_CATEGORY = {'food': '/images/junkie-stuff.png'}
 HEADER_COVERS_BY_TAG = {'food': '/images/food.png', 'drinks':'/images/orange-juice.png'}
 SHOW_CREDITS = False
 
+FACEBOOK_COMMENTS_ENABLED = True
