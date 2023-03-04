@@ -29,15 +29,24 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: GitHub Pelican Build Action
+        # You may pin to the exact commit or the version.
+        # uses: iranzo/gh-pages-pelican-action@c27d99dd96c4137b3e6894aaf32bf89bb022214a
+        uses: iranzo/gh-pages-pelican-action@1.0.3
         with:
-          # Upload entire repository
-          path: 'docs'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          # override the default `gh-pages` deployment branch
+          GH_PAGES_BRANCH: "gh-pages"
+          SOURCE_FOLDER: "content"
+          PELICAN_CONFIG_FILE: "publishconf.py"
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: Setup Pages
+#         uses: actions/configure-pages@v2
+#       - name: Upload artifact
+#         uses: actions/upload-pages-artifact@v1
+#         with:
+#           # Upload entire repository
+#           path: 'docs'
+#       - name: Deploy to GitHub Pages
+#         id: deployment
+#         uses: actions/deploy-pages@v1
