@@ -1,0 +1,22 @@
+body {
+    font-size: 2rem;
+}
+.inner{
+    max-width: 80rem;
+}
+.blog-cover, .post-cover{
+    opacity: 0.5;
+    animation: none !important;
+}
+section.post-content h1, .post-header h2.post-title{
+    font-size: 3rem;
+    color: purple;
+}
+section.post-content h2{
+    font-size: 2.8rem;
+    color: palevioletred;
+}
+
+section.post-content h3{
+    font-size: 2rem;
+}

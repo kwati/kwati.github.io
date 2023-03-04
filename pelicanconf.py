@@ -1,12 +1,12 @@
 AUTHOR = 'Department of Technology (Khalti)'
 SITENAME = 'Bits in Skewers'
 SITESUBTITLE = 'engineering@khalti.com'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 THEME = 'attila-1.5'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs/'
-STATIC_PATHS = ['content/assets/']
+STATIC_PATHS = ['assets/']
 
 TIMEZONE = 'Asia/Kathmandu'
 
@@ -23,14 +23,18 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Khalti Digital Wallet', 'https://khalti.com/'),
 )
 # Social widget
-SOCIAL = ()
+SOCIAL = (
+    ('Twitter', 'https://twitter.com/khalti'),
+)
 # SOCIAL = (('You can add links in your config file', '#'),
 #           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = False
+
+CSS_OVERRIDE = ['assets/css/kwati.css']
 
 
 # Theme configurations 
