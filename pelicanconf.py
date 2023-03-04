@@ -10,7 +10,10 @@ THEME = 'attila-1.5'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs/'
-STATIC_PATHS = ['assets/']
+STATIC_PATHS = ['assets/', 'extra/CNAME']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+}
 
 TIMEZONE = 'Asia/Kathmandu'
 
@@ -63,3 +66,4 @@ SHOW_FULL_ARTICLE = False
 HEADER_COVERS_BY_CATEGORY = {'food': '/images/junkie-stuff.png'}
 HEADER_COVERS_BY_TAG = {'food': '/images/food.png', 'drinks':'/images/orange-juice.png'}
 SHOW_CREDITS = False
+
