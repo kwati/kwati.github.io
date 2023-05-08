@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+  <title>Seed Feature as a Strategy in our Engineering</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+<link href="http://localhost:8000/seed-feature-strategy-in-engineering-process.html" rel="canonical" />
+  <!-- Feed -->
+
+  <link href="http://localhost:8000/theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="http://localhost:8000/theme/css/code_blocks/github.css" rel="stylesheet">
+
+    <!-- CSS specified by the user -->
+
+
+    <link href="http://localhost:8000/assets/css/kwati.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+
+    <meta name="description" content="In the fast-paced world of software development, engineering teams can sometimes struggle to keep up with the demands of marketing and...">
+
+    <meta name="author" content="Dhruba Adhikari">
+
+    <meta name="tags" content="reflection">
+    <meta name="tags" content="features">
+    <meta name="tags" content="engineering practices">
+    <meta name="tags" content="cto">
+    <meta name="tags" content="product management">
+
+
+
+
+<!-- Open Graph -->
+<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Bits in Skewers"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Seed Feature as a Strategy in our Engineering"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="In the fast-paced world of software development, engineering teams can sometimes struggle to keep up with the demands of marketing and..."/>
+<meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://localhost:8000/seed-feature-strategy-in-engineering-process.html"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2023-05-09 00:28:00+05:45"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content=""/>
+<meta prefix="og: http://ogp.me/ns#" property="article:author" content="http://localhost:8000/author/dhruba-adhikari.html">
+<meta prefix="og: http://ogp.me/ns#" property="article:section" content="approach to engineering, features"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="reflection"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="features"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="engineering practices"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="cto"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="product management"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://localhost:8000/assets/article_images/2023/0002.feature-seeding-cover.jpg">
+
+<!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@khalti">
+    <meta name="twitter:title" content="Seed Feature as a Strategy in our Engineering">
+    <meta name="twitter:url" content="http://localhost:8000/seed-feature-strategy-in-engineering-process.html">
+
+        <meta name="twitter:image:src" content="http://localhost:8000/assets/article_images/2023/0002.feature-seeding-cover.jpg">
+
+      <meta name="twitter:description" content="In the fast-paced world of software development, engineering teams can sometimes struggle to keep up with the demands of marketing and...">
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Seed Feature as a Strategy in our Engineering",
+  "headline": "Seed Feature as a Strategy in our Engineering",
+  "datePublished": "2023-05-09 00:28:00+05:45",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "Dhruba Adhikari",
+    "url": "http://localhost:8000/author/dhruba-adhikari.html"
+  },
+  "image": "http://localhost:8000/assets/article_images/2023/0002.feature-seeding-cover.jpg",
+  "url": "http://localhost:8000/seed-feature-strategy-in-engineering-process.html",
+  "description": "In the fast-paced world of software development, engineering teams can sometimes struggle to keep up with the demands of marketing and..."
+}
+</script>
+</head>
+<!-- TODO : Body class -->
+<body class="home-template">
+
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="imCdLiOX"></script>
+
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+
+              <li role="presentation"><a href="http://localhost:8000/pages/about.html">About this blog</a></li>
+              <li role="presentation"><a href="http://localhost:8000/pages/about-khalti.html">About Khalti</a></li>
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="post-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="http://localhost:8000/" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Seed Feature as a Strategy in our Engineering</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="http://localhost:8000/author/dhruba-adhikari.html">Dhruba Adhikari</a>
+            | <time datetime="Tue 09 May 2023">Tue 09 May 2023</time>
+        </span>
+            <div class="post-cover cover" style="background-image: url('http://localhost:8000/assets/article_images/2023/0002.feature-seeding-cover.jpg')">
+      </div>
+    </header>
+
+  <section id="wrapper">
+    <a class="hidden-close"></a>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>In the fast-paced world of software development, engineering teams can sometimes struggle to keep up with the demands of marketing and business expansion. This can leave little time for planning and implementing large software features or even making small hotfixes that are not necessarily related to a bug.</p>
+<p><strong>Hotfixes or patches</strong> refer to code changes that are introduced in production to address bugs that were not discovered during testing or were introduced in a previous release. In software development, the pace of requirements can make it challenging to plan and prioritize development work. Unexpected changes in priorities or urgent feature requests may require the implementation of hotfixes or patches. Development teams need to be flexible and responsive to changing requirements, while also managing technical debt.</p>
+<p>In response to the pressure to deliver new features and address urgent issues, engineering teams may sometimes come up with quick solutions that are not ideal from a software design perspective. <strong>These solutions may involve hardcoding values or adding if conditions to meet specific requirements, while offloading other tasks to an asynchronous task managed by a worker module.</strong> While these quick solutions may address immediate needs, they can lead to technical debt and increase the complexity of the codebase over time. As such, it is important for engineering teams to balance the need for speed with a focus on long-term code maintainability and scalability.</p>
+<p><img alt="Connections spike distribution" src="assets/article_images/2023/0002.lego.jpg" title="lego - pieces of patches introduced"></p>
+<p>As a matter of fact, development teams often face complex and time-sensitive requirements that require quick thinking and fast implementation, all while being expected to deliver in a snap. Some examples of these incidents could include:</p>
+<ol>
+<li>Providing a discount of Rs 200 or 1.5% (whichever is lower) to users who pay more than Rs 5000 for an insurance service before the due date starts.</li>
+<li>Automatically debiting some pre-listed wallets with standing instruction and making payment against a designated service.</li>
+<li>Sending a push notification to a user who tops up their mobile number.</li>
+<li>Sending a coupon to a user who writes specific text in the payment remarks.</li>
+<li>Settling a user's merchant account balance to a particular bank account but in a frequency different from the regular offering.</li>
+<li>Disabling the load from a bank's mobile app right away due to an error. However, there is no real-time credit to Khalti wallet, and the workflow doesn't originate from our app. The only thing we can do is to stop crediting the user's balance to the wallet and inform the bank manually.</li>
+</ol>
+<p>And most of these incidents require attention in a maximum span of two to three business days.</p>
+<h1>The Consequences of Chasing</h1>
+<p>Being the backbone of support for the business, it's important for the backend team to remain agile, adaptive, and ready to take on any challenge. However, taking shortcuts and accumulating technical debt just to meet tight deadlines is not fun, as it can lead to serious consequences in the future.</p>
+<p><strong>Say no to patch, say yes to feature seeding</strong></p>
+<h1>So, what is feature seeding ?</h1>
+<p>Feature Seeding is a strategy that introduces a micro-feature into the production environment to fulfill an immediate need, regardless of whether it is a bug or hotfix. The purpose of such codebase is to provide a temporary solution that can be further developed into a complete feature module in the future. This approach allows for quick and agile implementation while still addressing current requirements and minimizing the technical debt or possible catastrophic consequences. </p>
+<p><img alt="Feature Seeding" src="assets/article_images/2023/0002.planting.jpg" title="lego - pieces of patches introduced"></p>
+<h1>Why feature seeding ?</h1>
+<p>While such shortcuts may be mandated by higher authorities to keep up with market demands, they can create dependencies on specific individuals and increase technical debt in the long run.</p>
+<p>In a more ideal scenario, a rigorous Change Request process and a well-planned Sprint would be followed, but in the fast-paced world of software development, these steps may be skipped in favor of quick implementation. As a result, the SDLC may be altered multiple times to keep up with market demands, leading to potential long-term consequences.</p>
+<p>That's when we picked Seed Feature as our strategy. </p>
+<h2>Pros</h2>
+<ol>
+<li><strong>(A little) more time for planning:</strong> Since a seeded feature is recognized as a potential feature, it allows for more time to be allocated during the solution planning phase, resulting in a better-designed and documented solution.</li>
+<li><strong>Collaboration opportunity:</strong> By taking a feature-like approach, even teams that may not be fully available, such as product and QA, can collaborate and provide their insights.</li>
+<li><strong>Future reusability:</strong> The seeded feature can be utilized as a reference for future urgent requirements that may arise, increasing its reusability.</li>
+<li><strong>Improved flexibility:</strong> Partial granularity and configurability can be introduced with a seeded feature, allowing the codebase to be extended and reused with more flexibility.</li>
+<li><strong>Feature control:</strong> Feature flags can be implemented to control the visibility and functionality of the seeded feature, enabling it to be used as a short-lived solution if needed.</li>
+<li><strong>Reduced maintenance:</strong> The seeded codebase doesn't need to be deleted or rewritten, reducing maintenance time and resources.</li>
+<li><strong>Lower technical debt:</strong> Since it's more documented and tested by the QA team, a seeded feature can help lower technical debt.</li>
+<li><strong>Simplified complexity:</strong> Seeded features are more prominent and visible than hardcoded patches, making the codebase less complex and easier to manage.</li>
+</ol>
+<p>Additionally, the delivery cycle can be significantly reduced in the future when similar urgent requirements arise, as the seeded feature serves as a foundation and reference point for developing a complete feature module.</p>
+<h2>Cons</h2>
+<p>While there are certainly risks and downsides associated with this approach, it can be a viable option if the potential consequences are fully understood and the decision is made with a clear understanding of the trade-offs involved. Ultimately, it is up to each engineering team to find the balance between delivering features quickly and maintaining a sustainable codebase over the long term.</p>
+<ol>
+<li><strong>Time and Effort</strong> - Adds additional time and effort to the development process, potentially delaying other tasks and projects.</li>
+<li><strong>Documentation</strong> - Requires extra documentation to ensure the temporary solution is properly understood and can be developed into a complete feature in the future.</li>
+<li><strong>Limited Reusability</strong> - There's a risk that the feature seeded may not be needed again in the future, leading to wasted resources.</li>
+<li><strong>Infrastructure and Deployment Costs</strong> - The feature may require additional infrastructure or deployment costs that were not planned for.</li>
+<li><strong>Technical Debt</strong> -  If not done properly, feature seeding can lead to more technical debt in the long run.</li>
+<li><strong>Stakeholder Buy-In</strong> - It may be difficult to get stakeholders to buy-in to the idea of feature seeding and to understand the potential impact.</li>
+</ol>
+<h1>Our own experiences</h1>
+<p>As the CTO, I have consistently advocated for the value of feature seeding as a solution for urgent business needs aligned with our Go-to-Market strategies. While we have experienced both successes and failures with seeded features, I firmly believe that this approach has the potential to be a game-changer in software engineering and product development. It's essential to remember that feature seeding is not merely a short-term or long-term strategy, but a strategic approach that can lead to significant innovation and growth.</p>
+<h2>DaamiQR</h2>
+<p>DaamiQR was born out of a simple yet crucial insight - some of our users were using our app to scan QR codes generated by other wallets, causing them to miss out on the momentum of QR penetration in the industry. We seeded DaamiQR as a solution to quickly inform users that the scanned QR codes were not supported in a fun and engaging way
+Over time, DaamiQR evolved from a simple scanner feature to a powerful engagement tool for below-the-line activities. We even took it a step further and distributed it to FMCG companies as part of their loyalty programs. DaamiQR became a game-changing approach to QR code scanning, allowing our users to effortlessly engage with brands and unlock rewards, all while enhancing their overall experience with our app. DaamiQR feature proved to be a viable alternative to a non-payment QR feature.</p>
+<h2>VNL</h2>
+<p>What began as a simple web wrapper to load webpages for marketing promotions and sharing deep links on social media, has now evolved into a powerful micro-application framework inside the Khalti Wallet.</p>
+<h2>TaGGR</h2>
+<p>A simple "if this then that" parser that we initially seeded ended up maturing into a highly granular post-action trigger manager.</p>
+<h2>InApp Roadblock</h2>
+<p>A basic API call that was initially used to track application opens quickly evolved into a versatile marketing and communication tool. This feature allowed us to send important notifications to our users and even force updates in case of critical bugs in the application. With its evolution, this API call became an essential component in ensuring our users have a seamless experience with our app, while also providing us with valuable data on user behavior and engagement.</p>
+<h2>Bazzar</h2>
+<p>What started as a solution to cater to the needs of merchants selling things online through Facebook has now matured into a robust hyperlocal merchant integration platform. This platform has evolved to a point where it can integrate almost any merchant today, no matter their size or location. It's amazing to see how a simple idea has grown and expanded to serve the needs of merchants across various industries.</p>
+<h2>Heist</h2>
+<p>Initially started as a quiz application, the app continued to offer the quiz feature while also expanding to include other features. The app took a different direction as it evolved into a user performance data lake and consolidation platform. This unexpected transformation allowed us to gather valuable insights into user behavior and performance, ultimately leading to improvements in the app's overall functionality and user experience</p>
+<h2>Jamara</h2>
+<p>Originally a simple static HTML generator written in Django, the tool has since evolved to serve as a powerful and flexible custom CMS for the Khalti homepage.</p>
+<p>To conclude,</p>
+<p>At Khalti, we're passionate about creating products that make a difference in people's lives. Our journey began with simple ideas that have grown into powerful tools that are now an integral part of people's lives. Our products may have started out simple, but through innovation and hard work, they've grown into something much more. We believe that technology can be a powerful force for good, and we're committed to using it to create products that make people's lives better.</p>
+            </section>
+
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=Seed Feature as a Strategy in our Engineering&amp;url=http://localhost:8000/seed-feature-strategy-in-engineering-process.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8000/seed-feature-strategy-in-engineering-process.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+
+                <aside class="post-tags">
+<a href="http://localhost:8000/tag/reflection.html">reflection</a><a href="http://localhost:8000/tag/features.html">features</a><a href="http://localhost:8000/tag/engineering-practices.html">engineering practices</a><a href="http://localhost:8000/tag/cto.html">cto</a><a href="http://localhost:8000/tag/product-management.html">product management</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+<div class="fb-comments" data-href="http://localhost:8000/seed-feature-strategy-in-engineering-process.html" data-width="100%" data-numposts="10"></div>
+
+                <aside class="post-nav">
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://localhost:8000/theme/js/script.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K4GR3CZ37"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0K4GR3CZ37', { 'anonymize_ip': true });
+    </script>
+</body>
+</html>
